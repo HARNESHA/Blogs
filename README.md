@@ -4,8 +4,6 @@
 
 Email is a crucial communication channel for businesses, and ensuring its reliability is paramount. Amazon Simple Email Service (SES) is a powerful tool for sending transactional and marketing emails. To maintain high deliverability and troubleshoot issues efficiently, robust observability is essential. In this guide, we'll walk through setting up comprehensive observability for Amazon SES using Amazon CloudWatch. Let’s dive in! 🌊
 
-***
-
 ### 🛠️ Create a Configuration Set
 
 A Configuration Set in SES allows you to publish event data to Amazon CloudWatch. This is the foundation for our observability setup.
@@ -21,14 +19,15 @@ A Configuration Set in SES allows you to publish event data to Amazon CloudWatch
 
 
     <figure><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXeUOTdX478hl1T0VjFlZ_-DG5hyNZaCPgoKIr-mhVuyb_rXxbiikBkvLBZ9hlphWtUtxn41xFzxdkoo0iub96LxWwuDh-jIEYCbqQAmRGZYDyFaDW4GPSRMdIH2ZMiMBbIRlFCpvA_9KOuv5TZjYSxfogE?key=jA2TK0iQRl7CPWB8QOBCUg" alt=""><figcaption></figcaption></figure>
-* **Add CloudWatch Event Destination:**
-  * Select your newly created configuration set.
-  * Click **Create Event Destination**.
-  * Choose **CloudWatch** as the destination.
-  * Select the event types you want to monitor (e.g., sends, deliveries, bounces, complaints).
-  * Click **Create Event Destination**.
+*   **Add CloudWatch Event Destination:**
 
-<figure><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXcFArVay63AH7iqpPrklVFFjD-5dPrFzDsDtLTRj6sbozswgl6mRy46GLxWvrCIpDv1QJIjYPVRON6hpfEwxWhJUM_mIhnl3JfiyLECXuD7syMAOnG1NGb_XVPdtgFbQR4IyAs_C_EAPMJJe9p2ABLPJq_Y?key=jA2TK0iQRl7CPWB8QOBCUg" alt=""><figcaption></figcaption></figure>
+    * Select your newly created configuration set.
+    * Click **Create Event Destination**.
+    * Choose **CloudWatch** as the destination.
+    * Select the event types you want to monitor (e.g., sends, deliveries, bounces, complaints).
+    * Click **Create Event Destination**.
+
+    <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### 🏷️ Create Event Destination with Message Tags and SES
 
